@@ -1,0 +1,255 @@
+<html dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>פסיעה ראשונה</title>
+  <meta name="description" content="פסיעה ראשונה  ">
+  <meta name="keywords" content="פסיעה, הליכה, טיולים, טבע, מתחילים">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<button id="lightButton">
+  <i class="fas fa-sun"></i>
+</button>
+
+    <nav class="navbar">
+          <button id="toggleButton">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        <aside class="sidebar">
+          <button class="sidebar-button">יצירת קשר</button>
+          <button class="sidebar-button">פרטים נוספים</button>
+          <button class="sidebar-button">לוקיישן</button>
+          <button class="sidebar-button">גלריה</button>
+        </aside>
+
+<script>
+  const toggleButton = document.querySelector("#toggleButton");
+  const sidebar = document.querySelector(".sidebar");
+
+  toggleButton.addEventListener("click", function() {
+    sidebar.classList.toggle("active");
+  });
+
+  const lightButton = document.querySelector("#lightButton");
+
+  lightButton.addEventListener("click", function() {
+    document.body.classList.toggle("light");
+    if (document.body.classList.contains("light")) {
+      document.body.style.backgroundColor = "hsla(277, 100%, 14%, 1)";
+      document.querySelectorAll('.text-element').forEach(function (el) {
+        el.style.color = "hsla(339, 100%, 50%, 0.91)";
+      });
+    } else {
+      document.body.style.backgroundColor = "hsla(301, 100%, 50%, 0.07)";
+      document.querySelectorAll('.text-element').forEach(function (el) {
+        el.style.color = "hsla(0, 0%, 100%, 1)";
+      });
+    }
+  });
+
+</script>
+
+<body>
+
+<header>
+  <h1> פסיעה ראשונה </h1>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <h1> מה היא בעצם מתקשרת רוחנית? </h1>
+<h2> מתקשרת רוחנית היא מונח המתאר אדם שמבצע ייעוץ רוחני לאחרים, ולרוב הוא משתמש
+  בטכניקות כמו התפתחות אישית, התפתחות רוחנית, תפיסה עמוקה,
+  ואומנות ההאזנה.
+  מתקשרת רוחנית מתפקדת כמו יועץ או מדריך רוחני, שסיועה והנחייתה
+  יכולים לעזור לקול פנים אל הבעיות הפנימיות של האחרים,
+  לחפש פתרונות לסיבות החרדה ולהגשים את המטרות הרוחניות שלהם </h2>
+<h1>
+  יתרונות התהליך:
+</h1>
+<h2>     סיוע בתהליך התפתחות רוחנית ופיתוח עצמי : זה עשוי לכלול הצגת טכניקות רגיעה, מדיטציה, ותרגול כלים רוחניים אחרים.
+
+    ייעוץ והנחייה בנושאים רגשיים ורוחניים : כגון חרדה, דכאון, תהליכי מוות וסבל, והתמודדות עם טראומה.
+
+    סיוע בשימוש בתורה, תפילה, ואמונה להגיע להבנה רחבה יותר על המטרות הרוחניות של האחרים וכיצד להשיג אותן.
+
+    מסייע לאחרים לזהות את המטרות הרוחניות שלהם ולמצוא דרכים להשיגן. </h2>
+</header>
+
+
+
+<main class="main-content">
+</main>
+
+
+
+<style>
+      body {
+        background-color: hsla(301, 100%, 50%, 0.07);
+        font-family: 'Noto Sans Hebrew', sans-serif;
+        width: 100%;
+        height: 100%;
+      }
+
+      body.light {
+        background-color: #fff;
+        color: #000;
+      }
+
+      header {
+        background-color: hsla(277, 100%, 14%, 0.2);
+        text-align: center;
+        width: 100%;
+        height: 10%;
+      }
+      h1 {
+        font-size: 17px;
+        color: hsla(263, 100%, 6%, 0.91);
+        margin: 0;
+        padding-left: 10px;
+        text-align: center;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      h2 {
+        font-size: 13px;
+        color: hsla(267, 100%, 14%, 1);
+        margin: 0;
+        padding-left: 10px;
+        text-align: center;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      h2:hover {
+        font-size: 13px;
+        color: hsla(339, 100%, 50%, 0.91);
+        margin: 0;
+        padding-left: 10px;
+        text-align: center;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      aside {
+      background-color: hsla(267, 100%, 14%, 1);
+      }
+
+      .navbar {
+        display: fixed;
+        align-items: center;
+        background-color: hsla(267, 100%, 14%, 1);
+
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+      }
+
+      .navbar-brand img {
+        height: 40px;
+      }
+
+      .sidebar {
+        background-color: hsla(301, 16%, 83%, 1);
+        padding: 10px;
+        text-align: center;
+        display: none;
+        width: 75px;
+        float: right;
+        margin: 0;
+      }
+
+      .sidebar.active {
+        display: block;
+      }
+
+      .sidebar a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+      }
+
+      .sidebar a:hover {
+        text-decoration: #862dc2;
+      }
+
+      .main-content {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin: 0;
+        font-size: 1.2rem;
+        width: 100%;
+        height: 100%;
+      }
+
+      .navbar {
+        display: fixed;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: hsla(301, 16%, 83%, 0.1);
+        color: hsla(301, 16%, 83%, 1);
+        border-radius: 14px;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: hsla(267, 100%, 14%, 0.4);
+        cursor: pointer;
+        display: fixed;
+        font-size: 1.5rem;
+        border-radius: 14px;
+        width: 100%;
+        font-size: 16px;
+
+      }
+      button:hover {
+        display: fixed;
+        width: 100%;
+        color: hsla(267, 100%, 14%, 1);
+        text-align: center;
+        border: none;
+        cursor: pointer;
+      }
+      #toggleButton {
+        font-size: 13px;
+        color: hsla(309, 100%, 21%, 0.91);
+        margin: 0;
+        padding-left: 60px;
+        text-align: right;
+        background-color: transparent;
+      }
+      #toggleButton:hover {
+        font-size: 13px;
+        color: hsla(309, 100%, 50%, 0.91);
+        margin: 0;
+        padding-left: 60px;
+        text-align: right;
+      }
+
+      #lightbutton {
+      font-size: 24px;
+      color: hsla(309, 100%, 21%, 0.91);
+      }
+      #lightbutton:hover {
+      font-size: 24px;
+      color: hsla(341, 100%, 69%, 1);
+      }
+</style>
+
+  </body>
+</html>
